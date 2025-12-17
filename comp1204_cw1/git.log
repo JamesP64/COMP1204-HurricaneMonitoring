@@ -1,0 +1,170 @@
+commit 2174b0d4d7023a14333f2a22f35d82a6095d1bc3
+Author: James Palmer <jp14g23@soton.ac.uk.com>
+Date:   Thu Mar 7 17:26:01 2024 +0000
+
+    Updated log
+
+commit 31f1eef6c4bce04196808601ea4d8dac25955920
+Author: James Palmer <jp14g23@soton.ac.uk.com>
+Date:   Thu Mar 7 17:25:12 2024 +0000
+
+    Small fix to csv
+
+commit 01b25801d0265eb771c00d42edd3941bbc04bbac
+Author: James Palmer <jp14g23@soton.ac.uk.com>
+Date:   Thu Mar 7 16:59:27 2024 +0000
+
+    Updated log
+
+commit 607d4879333ec1c6a8a9e605e5395310b5f9a509
+Author: James Palmer <jp14g23@soton.ac.uk.com>
+Date:   Thu Mar 7 16:58:04 2024 +0000
+
+    Added comments
+
+commit 5cdeabb086bb3117765363a05dec068d94106399
+Author: James Palmer <jp14g23@soton.ac.uk.com>
+Date:   Thu Mar 7 16:52:25 2024 +0000
+
+    Fixed header addition
+
+commit 062cd230e7fe9d89b7dbda8f100935d872be51f7
+Author: James Palmer <jp14g23@soton.ac.uk.com>
+Date:   Thu Mar 7 16:28:52 2024 +0000
+
+    Adding log file
+
+commit 9986a504de595a746ba5bddf980f91a17f17f654
+Merge: b508f5f 0cc4b44
+Author: James Palmer <jp14g23@soton.ac.uk.com>
+Date:   Wed Mar 6 16:04:46 2024 +0000
+
+    Merge branch 'python-addon'
+
+commit b508f5f6b875971dab5e356a85537875d6534644
+Author: James Palmer <jp14g23@soton.ac.uk.com>
+Date:   Wed Mar 6 15:57:26 2024 +0000
+
+    Initial creation of python-plot-script from working branch
+
+commit 0cc4b44374065c5acc78ff5e24a7bc0018ab1d6f
+Author: James Palmer <jp14g23@soton.ac.uk.com>
+Date:   Wed Mar 6 15:57:26 2024 +0000
+
+    Added new function to the python-plot-script from python-addon
+
+commit 117f024d98a31b4c3e37678231a5e8f0b9063fdc
+Author: James Palmer <jp14g23@soton.ac.uk.com>
+Date:   Wed Mar 6 15:57:26 2024 +0000
+
+    Cleaning old scripts
+
+commit 246a86ceeacacb673fcd3a187f6b6c00d7adb3ae
+Author: James Palmer <jp14g23@soton.ac.uk.com>
+Date:   Wed Mar 6 15:57:26 2024 +0000
+
+    Cleaning old scripts
+
+commit 6d9a409d64c610af5f22657d89bf7caf1a04f79e
+Merge: 214307b cd5b7e0
+Author: James Palmer <jp14g23@soton.ac.uk.com>
+Date:   Wed Mar 6 14:51:14 2024 +0000
+
+    Merge branch 'main' of https://git.soton.ac.uk/jp14g23/comp1204-jp14g23-cwk1
+
+commit 214307b8846ce692f37c4bf4e0f7eece28436fce
+Author: James Palmer <jp14g23@soton.ac.uk.com>
+Date:   Wed Mar 6 14:38:28 2024 +0000
+
+    Made PNGs
+
+commit cd5b7e0d52c41c991037b9fc2d6949129a1769c3
+Author: jp14g23 <jp14g23@soton.ac.uk>
+Date:   Wed Mar 6 14:28:13 2024 +0000
+
+    Delete storm_plot.png
+
+commit 8bef98f11a828c93c8e8597b0c4d3b7d36bb3c37
+Author: jp14g23 <jp14g23@soton.ac.uk>
+Date:   Wed Mar 6 14:27:43 2024 +0000
+
+    Upload New File
+
+commit 91566149216a48d05b58ad5cc043a5d8cb4c6bd6
+Author: jp14g23 <jp14g23@soton.ac.uk>
+Date:   Wed Mar 6 14:27:26 2024 +0000
+
+    Delete al212020.kml
+
+commit a4196df2a91d620db4a522ab74fb5860ad546d34
+Author: jp14g23 <jp14g23@soton.ac.uk>
+Date:   Wed Mar 6 14:27:15 2024 +0000
+
+    Delete al112020.kml
+
+commit 60ecd47ba8ca2e1f19c239155a3987fa4a70da12
+Author: jp14g23 <jp14g23@soton.ac.uk>
+Date:   Wed Mar 6 14:26:56 2024 +0000
+
+    Delete al012020.kml
+
+commit d3bc1662f9c9060ec7610177bcb38cc2edb5b4a4
+Merge: a2acb88 e6f4f66
+Author: James Palmer <jp14g23@soton.ac.uk.com>
+Date:   Tue Mar 5 14:14:44 2024 +0000
+
+    Merge branch 'python-addon'
+
+commit e6f4f660d3b2be032cfbe0eae9d23e8a7d9a0c8b
+Author: James Palmer <jp14g23@soton.ac.uk.com>
+Date:   Tue Mar 5 13:56:31 2024 +0000
+
+    Added new function to the python-plot-script from python-addon
+
+commit a2acb88054071c713b0479489d43b2ce55f2dd68
+Author: James Palmer <jp14g23@soton.ac.uk.com>
+Date:   Tue Mar 5 13:56:31 2024 +0000
+
+    Initial creation of python-plot-script from working branch
+
+commit a470efc8b5da266b1a205e7dfc14be3cf269a056
+Author: James Palmer <jp14g23@soton.ac.uk.com>
+Date:   Tue Feb 27 13:39:45 2024 +0000
+
+    Update 27/02
+
+commit 032659c46fa07a57f0125b739b87865e53d01357
+Author: James Palmer <jp14g23@soton.ac.uk.com>
+Date:   Fri Feb 23 18:08:42 2024 +0000
+
+    Trying to sed out tags but \ is a character that needs to be escaped# Please enter the commit message for your changes. Lines starting
+
+commit 831fe105afd4e313274a3ba7491a6f4e6aaf235a
+Author: James Palmer <jp14g23@soton.ac.uk.com>
+Date:   Fri Feb 23 15:21:09 2024 +0000
+
+    Made progress on sh file
+
+commit 7deccacad22fdb4f6b495266ef339d32062f0494
+Author: James Palmer <jp14g23@soton.ac.uk.com>
+Date:   Wed Feb 21 16:01:22 2024 +0000
+
+    _
+
+commit 51830bb450269e0adf3e972a65c64859181df97d
+Author: James Palmer <jp14g23@soton.ac.uk.com>
+Date:   Wed Feb 21 15:34:24 2024 +0000
+
+    Unzipped material file, commiting its contents
+
+commit 201924aa3cee21e9c0cff3775952ead6c1c34b8c
+Author: jp14g23 <jp14g23@soton.ac.uk>
+Date:   Wed Feb 21 14:55:33 2024 +0000
+
+    Upload New File
+
+commit e16f7bfb7f29f70d7ccdedf49b6b7d143e75f868
+Author: jp14g23 <jp14g23@soton.ac.uk>
+Date:   Wed Feb 21 14:47:09 2024 +0000
+
+    Initial commit

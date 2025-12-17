@@ -1,0 +1,108 @@
+% ----
+% COMP1204 CW1 Report Document
+% ----
+\documentclass[]{article}
+
+% Reduce the margin size, as they're quite big by default
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+
+\title{COMP1204: Data Management \\ Coursework One: Hurricane Monitoring }
+% Update these!
+\author{James Palmer \\ 35277963}
+
+% Actually start the report content
+\begin{document}
+
+% Add title, author and date info
+\maketitle
+
+\section{Introduction}
+In this coursework, there were 3 aims:
+\begin{enumerate}
+    \item Create a bash script to convert convoluted kml data into comma separated values.
+    \item Take the cleaned data and plot it on a map to monitor a hurricane.
+    \item Resolve a git conflict by merging two versions of a Python script.
+\end{enumerate}
+
+\section{Create CSV Script}
+\begin{verbatim}
+
+#!/bin/bash
+#$1 is input 1, $2 is input 2
+#Firstly, clearing the output file
+truncate -s 0 $2
+#Grabbing all lines of the input file with <tr> tag
+#Replacing all tags with nothing
+#Removing the 10 blank spaces at the start of the remaining lines
+#Removing lines that contain '2020'
+#Removing anything after a ; on each line
+#Removing lines that contain :
+#Removing an extra whitespace every 4 lines, starting on the second line
+#Removing every space after a comma
+#Combining every two lines,seperating with a whitespace
+#Repeating so every 4 lines are combined
+grep "<tr>" $1 | sed 's/<[^>]*>//g' | sed -r 's/^.{10}//' | sed -n '/2020/!p' | sed 's/;.*//;/^$/d' | sed "/\:$/d" | sed -r '2~4s/^.{1}//' | sed 's/, */,/g'| sed 'N;s/\n/,/' | sed 's/[[:space:]]*$//'| sed 'N;s/\n/,/'> $2
+#Adds header to the top of the file
+echo "Timestamp,Latitude,Longitude,MinSeaLevelPressure,MaxIntensity" | cat - $2 > temp && mv temp $2
+
+\end{verbatim}
+
+The sh script starts with the truncate command, which reduces the size of a file, with the -s option to specify the resulting size of the file. \$2 chooses the file to operate on, which is input 2. Therefore, you are truncating the second input file to 0 bytes - which results in clearing it, to ensure there is no previous content in it.
+
+
+Following this a series of piped commands to reach the desired text format.
+I achieved this using an iterative approach , by adding a new command, printing the command, and adding a new sed command. Doing this in a cycle allowed me to eventually achieve the solution
+
+First, the grep command grabs all of the lines with the <tr> tag, as it precedes all of the key data. The \$1 indicates this is done on he first input file.
+Then a series of sed commands(explained in the comments) remove all unnecessary text, and arrange the data into csv format.
+
+Finally which is added to the file, I add in the row titles.
+
+\section{Storm Plots}
+
+\includegraphics[scale = 0.3]{image.png}
+\\KML:al012020.kml
+
+\includegraphics[scale = 0.3]{image_2024-03-06_153718934.png}
+\\KML:al102020.kml
+
+\includegraphics[scale = 0.3]{image_2024-03-06_154045487.png}
+\\KML:al122020.kml
+
+
+\section{Git usage}
+
+Commands used:\\
+1.git branch - to view all current branches\\
+2.git merge python-addon - This returned an error, as there is a conflict to resolve\\
+3.vim python-plot-script.py - To open and fix the file\\
+4.git add . - Adds new files\\
+5.git commit \\
+6.git merge python-addon\\
+7.git push\\
+
+\begin{verbatim}
+import matplotlib.pyplot as plt
+import os
+import glob
+import math
+user_key = 16332
+
+def plot_all_csv_pressure():
+        storm = pd.read_csv(f)
+        storm['Pressure'].plot()
+        plt.show()
+		
+def plot_all_csv_intensity():
+    path = os.getcwd()
+    csv_files = glob.glob(os.path.join(path, '*.csv'))
+    
+    for f in csv_files:
+        storm = pd.read_csv(f)
+        storm['Intensity'].plot()
+        plt.show()
+\end{verbatim}
+
+
+\end{document}
